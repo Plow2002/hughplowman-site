@@ -1,0 +1,19 @@
+# Ignore everything by default; only the live site files are tracked
+*
+!CNAME
+!.gitignore
+!index.html
+!css/
+css/*
+!css/styles-review.css
+!files/
+files/*
+!files/Hugh-Plowman-Resume.pdf
+!assets/
+assets/*
+!assets/hugh-profile.jpg
+!assets/founders-factory-cohort.jpg
+!assets/marcus-oldham-grad.jpg
+!assets/three-years-piggery.jpg
+!assets/three-years-canola.jpg
+!assets/dairy-country.jpg

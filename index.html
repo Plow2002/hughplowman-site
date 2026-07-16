@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hugh Plowman. Overly ambitious, mad keen and looking to join a like-minded startup. Agribusiness, mining, deeptech, health, AI, it doesn't matter. Based in Australia, open to anywhere.">
+  <title>Hugh Plowman</title>
+  <link rel="stylesheet" href="css/styles-review.css">
+  <style>
+    .about ol {
+      max-width: 640px;
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--text);
+      padding-left: 1.5rem;
+      list-style: decimal;
+      list-style-position: outside;
+    }
+    .about ol li {
+      padding-left: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+    .about ol li:last-child {
+      margin-bottom: 0;
+    }
+    .about p + ol {
+      margin-top: 1.25rem;
+    }
+    .about ol + p {
+      margin-top: 1.25rem;
+    }
+    .tl-photo {
+      object-fit: cover;
+      object-position: center;
+    }
+    .hero {
+      padding-bottom: 1.5rem;
+    }
+    .hero-tagline {
+      max-width: 40ch;
+      margin-bottom: 1.75rem;
+    }
+    .hero-tagline p {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    .hero-tagline p:last-child {
+      margin-bottom: 0;
+    }
+    .about {
+      padding-top: 2rem;
+    }
+    .about .section-label {
+      margin-bottom: 1rem;
+    }
+    .about a {
+      color: var(--primary);
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .about a:hover {
+      color: var(--accent);
+    }
+    .hero-location {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+      font-size: 0.9375rem;
+      color: var(--muted);
+    }
+    .hero-location svg {
+      width: 19px;
+      height: 19px;
+      flex-shrink: 0;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .hero .contact-icons {
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+    .hero .btn-download {
+      background-color: var(--primary);
+      color: var(--bg);
+      border-color: var(--primary);
+      padding: 0.625rem 1.25rem;
+    }
+    .hero .btn-download:hover {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      color: var(--bg);
+    }
+    .hero-photo {
+      width: 200px;
+      height: 300px;
+    }
+    .nav-links a.active {
+      font-weight: 500;
+    }
+    @media (max-width: 540px) {
+      .hero-photo {
+        order: -1;
+        width: 132px;
+        height: 165px;
+      }
+      .hero {
+        gap: 1.75rem;
+      }
+    }
+    .timeline-entry:first-child .tl-date {
+      color: var(--accent);
+    }
+    .timeline-entry:first-child .tl-title {
+      font-size: 1.25rem;
+    }
+    .timeline::before {
+      left: 0;
+      transform: none;
+    }
+    .timeline .timeline-entry {
+      grid-template-columns: 1fr 250px;
+      padding-left: 1.75rem;
+    }
+    .timeline .timeline-entry::before {
+      left: -3px;
+      transform: none;
+    }
+    .timeline .timeline-entry .tl-content {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .timeline .timeline-entry .tl-figure,
+    .timeline .timeline-entry .tl-photos-stack {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .tl-figure {
+      margin: 0;
+    }
+    .tl-caption {
+      margin-top: 0.5rem;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .timeline .timeline-entry + .timeline-entry {
+      border-top: 1px solid var(--divider);
+      padding-top: 1.5rem;
+    }
+    .timeline .timeline-entry + .timeline-entry::before {
+      top: 1.9rem;
+    }
+    .tl-desc {
+      text-align: justify;
+      hyphens: auto;
+    }
+    .timeline .tl-photo {
+      aspect-ratio: 3 / 2;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Hugh Plowman</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hugh Plowman</h1>
+        <div class="hero-tagline">
+          <p>Overly ambitious, probably underqualified, start-up experience, mad keen to get involved and make a go of it.</p>
+          <p>Looking to join a like-minded startup that values the customer, the team and learning.</p>
+          <p>Agribusiness, Mining, Deeptech, Health, AI &#8211; it doesn&#8217;t matter.</p>
+        </div>
+        <div class="contact-icons">
+
+          <!-- Email -->
+          <a href="mailto:hugh@hughplowman.com" class="icon-tile" aria-label="Email Hugh">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M2 7l10 7 10-7"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/hugh-plowman-105772253" class="icon-tile" target="_blank" rel="noopener noreferrer" aria-label="Hugh on LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="4"/>
+              <path d="M7 10v7"/>
+              <circle cx="7" cy="7" r="1" fill="currentColor" stroke="none"/>
+              <path d="M11 10v7m0-4c0-2.2 1.3-3 2.8-3 1.6 0 2.2 1.1 2.2 2.8V17"/>
+            </svg>
+          </a>
+
+          <!-- Resume download -->
+          <a href="files/Hugh-Plowman-Resume.pdf" class="btn-download" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v13"/>
+              <path d="M7 11l5 5 5-5"/>
+              <path d="M5 21h14"/>
+            </svg>
+            Download Resume
+          </a>
+
+        </div>
+        <p class="hero-location">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6z"/>
+            <circle cx="12" cy="8" r="2"/>
+          </svg>
+          Australia, but open to wherever the opportunity lies.
+        </p>
+      </div>
+      <img src="assets/hugh-profile.jpg" alt="Hugh Plowman" class="hero-photo">
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <p class="section-label">A bit about me</p>
+      <p>I&#8217;m a city kid who started out as the s**t kicker (literally covered in the stuff). My first year out of school was spent getting up at 4am to milk 1,000 cows, and over the next three years I worked on farms and in agricultural businesses to pay my way through college.</p>
+      <p>Through college, work and internships, I&#8217;ve seen more than 50 farms, agribusinesses and agri-finance companies up close across Australia, the USA and New Zealand. They taught me commercial lessons that apply to any industry.</p>
+      <p>In 2026 I&#8217;ve had a crash course in startups: developing commercial strategy and business analytics, pitching institutional investors and high net worth individuals, co-leading a capital raise through direct, personal outreach, writing grant applications, and helping to build a carbon scope three programme.</p>
+      <p>The same year, I was lucky enough to be part of the <a href="https://www.wa.gov.au/government/announcements/founders-factory-nature-tech-accelerator-continues-support-was-thriving-innovation-ecosystem" target="_blank" rel="noopener noreferrer">Founders Factory Nature Tech Accelerator</a>. I never imagined I&#8217;d be sitting in a Perth pub trading ideas with a NASA physicist and MIT, Stanford and Harvard graduates.</p>
+      <p>I&#8217;m passionate about technology, agriculture and the people trying to improve our industries and our economy.</p>
+      <p>My thoughts on Australia as an economy:</p>
+      <ol>
+        <li>We&#8217;re incredibly good at producing raw products (grain and minerals).</li>
+        <li>We&#8217;re incredibly bad at value-adding those raw products (we export pretty much all of it).</li>
+        <li>We&#8217;re completely reliant on international markets for both inputs and outputs.</li>
+        <li>And we&#8217;re not doing enough to change it.</li>
+      </ol>
+      <p>I want to be part of that change, by helping build the companies and technologies that will take us from being one of the least complex economies in the world to one of the most.</p>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience">
+      <p class="section-label">Experience</p>
+
+      <div class="timeline">
+
+        <!-- 1 odd: text right, no photo -->
+        <div class="timeline-entry">
+          <div class="tl-content">
+            <span class="tl-date">Now</span>
+            <h3 class="tl-title">What&#8217;s next</h3>
+            <p class="tl-desc">Looking for what&#8217;s next, ideally with a startup or VC working to make real change and leave a lasting impact on the world.</p>
+          </div>
+        </div>
+
+        <!-- 2 even: text left, photos right -->
+        <div class="timeline-entry">
+          <div class="tl-content">
+            <span class="tl-date">2026</span>
+            <h3 class="tl-title">Founders Factory and DuraTerra</h3>
+            <p class="tl-desc">A chance meeting led to a full-time role with DuraTerra, an early-stage WA agtech startup, where I opened doors to investors and industry partners, built investor materials and financial models, and developed go-to-market strategy. Through DuraTerra I joined Cohort 4 of the Founders Factory Nature Tech Accelerator, including the residency week and pitching sessions.</p>
+          </div>
+          <figure class="tl-figure">
+            <img src="assets/founders-factory-cohort.jpg" alt="Founders Factory Nature Tech Accelerator Cohort 4 at the State Buildings, Perth" class="tl-photo">
+            <figcaption class="tl-caption">Founders Factory residency week</figcaption>
+          </figure>
+        </div>
+
+        <!-- 3 odd: text right, photo left -->
+        <div class="timeline-entry">
+          <div class="tl-content">
+            <span class="tl-date">2024&#8211;2025</span>
+            <h3 class="tl-title">Marcus Oldham College</h3>
+            <p class="tl-desc">I moved to Geelong to study at Marcus Oldham College, Australia&#8217;s specialist agribusiness school (70% business and commerce, 30% agriculture). I completed 12 weeks of internships with Argyle Capital, Growth Farms and Impact Ag, and graduated with a distinction average in December 2025.</p>
+          </div>
+          <figure class="tl-figure">
+            <img src="assets/marcus-oldham-grad.jpg" alt="Marcus Oldham College graduation" class="tl-photo">
+            <figcaption class="tl-caption">Graduation day, December 2025</figcaption>
+          </figure>
+        </div>
+
+        <!-- 5 odd: text right, photos left -->
+        <div class="timeline-entry">
+          <div class="tl-content">
+            <span class="tl-date">2021&#8211;2023</span>
+            <h3 class="tl-title">Three years on the land</h3>
+            <p class="tl-desc">Three years working across some of WA&#8217;s best farming operations. I started on a 1,000-cow dairy and in a silage contracting business that took me to 25+ farms across the southwest, then moved into broadacre cropping and sheep, running machinery through seeding and harvest and handling livestock.</p>
+          </div>
+          <div class="tl-photos-stack">
+            <figure class="tl-figure">
+              <img src="assets/three-years-piggery.jpg" alt="At a piggery in Narrogin, WA" class="tl-photo">
+              <figcaption class="tl-caption">At a piggery, Narrogin WA</figcaption>
+            </figure>
+            <figure class="tl-figure">
+              <img src="assets/three-years-canola.jpg" alt="Standing in a flowering canola crop" class="tl-photo">
+              <figcaption class="tl-caption">In the canola, Beverley WA</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- 6 even: text left, photo right -->
+        <div class="timeline-entry">
+          <div class="tl-content">
+            <span class="tl-date">2020</span>
+            <h3 class="tl-title">Deciding to go farming</h3>
+            <p class="tl-desc">I&#8217;d grown up in the city with no connection to farming, but I wanted to scratch an itch, and found myself milking cows in the southwest of WA.</p>
+          </div>
+          <figure class="tl-figure">
+            <img src="assets/dairy-country.jpg" alt="Dairy country in the southwest of WA" class="tl-photo">
+            <figcaption class="tl-caption">Dairy country, southwest WA</figcaption>
+          </figure>
+        </div>
+
+        <!-- 7 odd: text right, photo left -->
+        <div class="timeline-entry">
+          <div class="tl-content">
+            <span class="tl-date">2020</span>
+            <h3 class="tl-title">Finished school</h3>
+            <p class="tl-desc">Graduated Year 12 in Perth. A sports injury left me sidelined, and much to my mum&#8217;s disappointment, I had no plan to start formal study.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <p class="section-label">Contact</p>
+      <p>I&#8217;m always keen to connect with founders, investors and anyone building something ambitious, whatever the industry. Feel free to get in touch.</p>
+      <p><a href="mailto:hugh@hughplowman.com">hugh@hughplowman.com</a></p>
+      <div class="contact-icons">
+
+        <!-- Email -->
+        <a href="mailto:hugh@hughplowman.com" class="icon-tile" aria-label="Email Hugh">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M2 7l10 7 10-7"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hugh-plowman-105772253" class="icon-tile" target="_blank" rel="noopener noreferrer" aria-label="Hugh on LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="4"/>
+            <path d="M7 10v7"/>
+            <circle cx="7" cy="7" r="1" fill="currentColor" stroke="none"/>
+            <path d="M11 10v7m0-4c0-2.2 1.3-3 2.8-3 1.6 0 2.2 1.1 2.2 2.8V17"/>
+          </svg>
+        </a>
+
+        <!-- Resume download -->
+        <a href="files/Hugh-Plowman-Resume.pdf" class="icon-tile" target="_blank" rel="noopener noreferrer" aria-label="Download Hugh's resume (PDF)">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v13"/>
+            <path d="M7 11l5 5 5-5"/>
+            <path d="M5 21h14"/>
+          </svg>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
